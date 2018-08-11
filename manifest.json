@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Store Search",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup" : "popup.html"
+  },
+
+  "permissions": ["tabs"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.smallwoodhome.com/search*"],
+      "js": ["content.js"]
+    }
+  ]
+}
